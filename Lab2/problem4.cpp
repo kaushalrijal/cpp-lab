@@ -1,3 +1,13 @@
+/*
+Create a class called 'TIME' that has
+- three integer data members for hours, minutes and seconds
+- constructor to initialize the object to zero
+- constructor to initialize the object to some constant value
+- overload +,- to add and subtract two TIME objects
+- overload > function to compare two time
+- member function to display time in HH:MM:SS format
+*/
+
 #include<iostream>
 
 using namespace std;
