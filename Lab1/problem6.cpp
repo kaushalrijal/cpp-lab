@@ -1,3 +1,5 @@
+// To write a C++ program to add two private data members using friend functions.
+
 #include<iostream>
 
 using namespace std;

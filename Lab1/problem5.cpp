@@ -1,3 +1,14 @@
+/*
+To write a program to categorize employees based on designation using static data members.
+Algorithm:
+1.Start
+2.Create a class for employee with two count variables declaring as a staticmember and employee id, name and designation as other data members.
+3.Get the employee id name and designation from the user.
+4.If the designation is MANAGER increment first count by 1 and if it isENGINEER increment second count by 1.
+5.Finally display the total number of managers, engineers and employees.
+6.Stop.
+*/
+
 #include <iostream>
 
 using namespace std;

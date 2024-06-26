@@ -1,3 +1,11 @@
+/*
+Program: Given that an EMPLOYEE class contains following members:
+data members: Employee number, Employee name, Basic, DA, IT, Net Salary
+and print data members. Write a C++ program to read the data of N employee
+and compute Net salary of each employee (DA=52% of Basic and Income Tax
+(IT) =30% of the gross salary) .
+*/
+
 #include <iostream>
 
 using namespace std;
