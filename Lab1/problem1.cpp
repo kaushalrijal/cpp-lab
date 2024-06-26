@@ -1,3 +1,13 @@
+/*
+Create a 'DISTANCE' class with :
+- feet and inches as data members
+- member function to input distance
+- member function to output distance
+- member function to add two distance objects
+Write a main function to create objects of DISTANCE class. Input two distances
+and output the sum.
+*/
+
 #include <iostream>
 
 using namespace std;
