@@ -1,3 +1,5 @@
+// Write a program that determines the maximum and the minimum of three numbers.
+
 #include <iostream>
 
 using namespace std;
