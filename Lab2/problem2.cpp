@@ -1,3 +1,8 @@
+/*
+To write a C++ program to overload all relational operators to compare US currency with Nepalese currency.
+Use conversion rate $1=NRs 101.36(Note: make two classes to represent each currency)
+*/
+
 #include<iostream>
 
 using namespace std;
