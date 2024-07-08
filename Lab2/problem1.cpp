@@ -34,10 +34,10 @@ class B{
         friend void swap(A &, B &);
 };
 
-void swap(A &a, B &b){
-    int temp = a.a;
-    a.a = b.b;
-    b.b = temp;
+void swap(A &aobj, B &bobj){
+    int temp = aobj.a;
+    aobj.a = bobj.b;
+    bobj.b = temp;
 }
 
 int main(){

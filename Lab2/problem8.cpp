@@ -10,6 +10,10 @@ leaves the parking garage. Keep track of number of cars in the garage overloadin
 
 using namespace std;
 
+class Time{
+    int hr, min, sec;
+};
+
 class garage{
 
 };
