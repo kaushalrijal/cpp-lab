@@ -1,3 +1,4 @@
+// Overload >> and << operators to input and display time.
 #include<iostream>
 
 using namespace std;
