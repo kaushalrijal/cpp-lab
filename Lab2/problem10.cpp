@@ -1,5 +1,3 @@
-//Modify all member operator functions to friend function.
-
 #include <iostream>
 
 using namespace std;
@@ -62,20 +60,31 @@ public:
         }
     }
 
-    friend Matrix operator+(Matrix&, Matrix&);
+    friend Matrix operator+(const Matrix &m1, const Matrix &m2);
+    friend void copy(Matrix &m1, const Matrix &m2);
 };
 
-Matrix operator+(Matrix &a, Matrix &b) {
-    if (a.row == b.row && a.col == b.col) {
-        Matrix result(a.row, a.col);
-        for (int i = 0; i < a.row; i++) {
-            for (int j = 0; j < a.col; j++) {
-                result.mat[i][j] = a.mat[i][j] + b.mat[i][j];
-            }
+Matrix operator+(const Matrix &m1, const Matrix &m2)
+{
+    Matrix result(m1.row, m1.col);
+    for (int i = 0; i < m1.row; i++)
+    {
+        for (int j = 0; j < m1.col; j++)
+        {
+            result.mat[i][j] = m1.mat[i][j] + m2.mat[i][j];
         }
-        return result;
-    } else {
-        cout << "Matrix dimensions should be equal for addition\n";
+    }
+    return result;
+}
+
+void copy(Matrix &m1, const Matrix &m2)
+{
+    for (int i = 0; i < m1.row; i++)
+    {
+        for (int j = 0; j < m1.col; j++)
+        {
+            m1.mat[i][j] = m2.mat[i][j];
+        }
     }
 }
 
@@ -91,7 +100,7 @@ int main()
     m1.input();
     cout << "Enter the matrix B: ";
     m2.input();
-    m3 = m1 + m2;
+    copy(m3, m1+m2);
     cout << "The sum of the matrices is: " << endl;
     m3.show();
     return 0;

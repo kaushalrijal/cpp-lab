@@ -109,10 +109,28 @@ bool operator!=(dollars d, rupees r){
 
 int main(){
     float r, d;
+    cout << "Enter the rupee amount and dollar amount: ";
     cin >> r >> d;
     rupees r1(r);
     dollars d1(d);
-    
-    cout << (d1 > r1);
-    cout << (r1 > d1);
+
+    if(r1 > d1){
+        cout << "Rupee amount is greater than dollar amount" << endl;
+    }
+    if (d1 > r1) {
+        cout << "Dollar amount is greater than rupee amount" << endl;
+    }
+    if (d1 == r1){
+        cout << "Dollar amount and rupee amount are equal" << endl;
+    }
+    if(r1 >= d1){
+        cout << "Rupee amount is greater than or equal to dollar amount" << endl;
+    }
+    if (d1 >= r1) {
+        cout << "Dolalr amount is greater than or equal to rupee amount" << endl;
+    }
+    if (d1 != r1){
+        cout << "Dollar amount and rupee amount are not equal" << endl;
+    }
+    return 0;
 }

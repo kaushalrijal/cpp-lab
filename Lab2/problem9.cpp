@@ -55,46 +55,26 @@ public:
 
     Matrix operator+(Matrix &o)
     {
-        if (row == o.row && col == o.col)
+        Matrix result(row, col);
+        for (int i = 0; i < row; i++)
         {
-            Matrix result(row, col);
-            for (int i = 0; i < row; i++)
+            for (int j = 0; j < col; j++)
             {
-                for (int j = 0; j < col; j++)
-                {
-                    result.mat[i][j] = mat[i][j] + o.mat[i][j];
-                }
+                result.mat[i][j] = mat[i][j] + o.mat[i][j];
             }
-            return result;
         }
-        else
-        {
-            cout << "Matrix dimensions should be equal for addition";
-            return Matrix(0, 0);
-        }
+        return result;
     }
 
-    Matrix &operator=(const Matrix &o)
+    void operator=(const Matrix o)
     {
-        if (this != &o)
-        { // Check for self-assignment
-            if (row == o.row && col == o.col)
-            {
-                for (int i = 0; i < row; i++)
-                {
-                    for (int j = 0; j < col; j++)
-                    { // Use col in the inner loop
-                        mat[i][j] = o.mat[i][j];
-                    }
-                }
-            }
-            else
-            {
-                cout << "Dimension Error\n"; // Added newline for clarity
-                // Handle dimension error or reallocate resources
+        for (int i = 0; i < row; i++)
+        {
+            for (int j = 0; j < col; j++)
+            { // Use col in the inner loop
+                mat[i][j] = o.mat[i][j];
             }
         }
-        return *this; // Return a reference to the current object
     }
 
     void show()
