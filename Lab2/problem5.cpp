@@ -51,7 +51,7 @@ int main(){
     String str1("hello");
     String str2("world");
     String str3 = str1 + str2;
-    String str4("helloworld");
+    String str4("hello world");
 
     if(str3 == str4){
         cout << "yes it's working" << endl;

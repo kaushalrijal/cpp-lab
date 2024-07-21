@@ -70,10 +70,15 @@ class Time{
 };
 
 int main(){
-    Time t1(1,20,0), t2(1, 40, 0), t;
+    Time t1(2,20,0), t2(1, 40, 0), t;
     t = t1 + t2;
+    t.display();
     t = t1 - t2;
     t.display();
-    cout << (t1 > t2);
+    if(t1 > t2){
+        cout << "T1 is greater than T2";
+    } else {
+        cout << "T2 is greater than T1";
+    }
     return 0;
 }
