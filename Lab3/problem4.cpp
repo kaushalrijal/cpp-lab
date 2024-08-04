@@ -26,8 +26,8 @@ class TwentyFour{
 
         void show(){
             cout << (hr < 10 ? "0" : "") << hr << ":"
-         << (min < 10 ? "0" : "") << min << ":"
-         << (sec < 10 ? "0" : "") << sec << endl;
+            << (min < 10 ? "0" : "") << min << ":"
+            << (sec < 10 ? "0" : "") << sec << endl;
         }
 };
 
@@ -52,9 +52,9 @@ class Twelve{
 
         void show(){
             cout << (hr < 10 ? "0" : "") << hr << ":"
-         << (min < 10 ? "0" : "") << min << ":"
-         << (sec < 10 ? "0" : "") << sec << " "
-         << meridiam << endl;
+            << (min < 10 ? "0" : "") << min << ":"
+            << (sec < 10 ? "0" : "") << sec << " "
+            << meridiam << endl;
         }
 };
 
@@ -64,7 +64,9 @@ int main(){
 
     t12 = t24;
 
+    cout << "12 hours format: ";
     t24.show();
+    cout << "24 hours format: ";
     t12.show();
 
     return 0;

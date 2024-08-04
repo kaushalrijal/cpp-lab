@@ -21,9 +21,9 @@ public:
     void show()
     {
         cout << (hr < 10 ? "0" : "") << hr << ":"
-         << (min < 10 ? "0" : "") << min << ":"
-         << (sec < 10 ? "0" : "") << sec << " "
-         << meridiam << endl;
+        << (min < 10 ? "0" : "") << min << ":"
+        << (sec < 10 ? "0" : "") << sec << " "
+        << meridiam << endl;
     }
 };
 
@@ -53,8 +53,8 @@ public:
     void show()
     {
         cout << (hr < 10 ? "0" : "") << hr << ":"
-         << (min < 10 ? "0" : "") << min << ":"
-         << (sec < 10 ? "0" : "") << sec << endl;
+        << (min < 10 ? "0" : "") << min << ":"
+        << (sec < 10 ? "0" : "") << sec << endl;
     }
 };
 
@@ -84,7 +84,9 @@ int main()
 
     t24 = t12;
 
+    cout << "12 hours format: ";
     t12.show();
+    cout << "24 hours format: ";
     t24.show();
 
     return 0;
