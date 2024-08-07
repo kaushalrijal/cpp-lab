@@ -14,15 +14,21 @@ class Date {
         ~Date(){};
         void display(){
             cout << year << "/" << month << "/" << day << endl;
-        }; // displays the date
-        Date get(){
-            return *this;
-        };     // accesses the date members
+        }; 
+        int getDay(){
+            return day;
+        };
+        int getMonth(){
+            return month;
+        };
+        int getYear(){
+            return year;
+        };
         void set(int d, int m, int y){
             day = d;
             month = m;
             year = y;
-        }     // sets the date members
+        }    
 };
 
 class Time {
@@ -36,9 +42,15 @@ class Time {
         void display(){
             cout << hour << ":" << minute << ":" << second << endl;
         } 
-        Time get(){
-            return *this;
-        };     // accesses the time members
+        int getHour(){
+            return hour;
+        };   
+        int getMinute(){
+            return minute;
+        };    
+        int getSecond(){
+            return second;
+        };     
         void set(int h, int m, int s){
             hour = h;
             minute = m;

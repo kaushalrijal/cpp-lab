@@ -92,9 +92,9 @@ int main(){
     Book b;
     Tape t;
 
-    cout << "Enter book details:" << endl;
+    cout << "Enter book details" << endl;
     b.getData();
-    cout << "Enter tape details:" << endl;
+    cout << "Enter tape details" << endl;
     t.getData();
 
     cout << endl;

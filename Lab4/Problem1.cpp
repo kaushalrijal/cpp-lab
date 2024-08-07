@@ -85,6 +85,7 @@ class ComputedSalary : public Employee {
 int main(){
     ComputedSalary total;
     total.getData();
+    cout << endl;
     total.showData();
     return 0;
 }

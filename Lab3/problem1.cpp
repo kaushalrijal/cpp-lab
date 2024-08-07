@@ -18,6 +18,7 @@ class Rupees{
         int getRupees(){
             return rupee;
         }
+        
         int getPaisa(){
             return paisa;
         }
@@ -45,11 +46,13 @@ class Dollars{
 };
 
 int main(){
-    Rupees r(1000, 0);
+    Rupees r(98,51);
     Dollars d;
     d = r;
+    cout << "Amount in rupes: ";
     r.show();
     cout << endl;
+    cout << "Amount in dollars: ";
     d.show();
     return 0;
 }
