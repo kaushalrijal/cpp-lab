@@ -24,3 +24,37 @@ Ensure that the number of copies is appropriately updated for each operation and
 operations maintain data integrity. Provide methods to read from and write to the file for
 maintaining the catalog data.
 */
+
+#include<iostream>
+#include<cstring>
+
+using namespace std;
+
+class Library{
+    double ISBN;
+    int numberOfCopies;
+    char bookTitle[50], author[30];
+
+    public:
+        Library(double isbn, int no, char *title, char *a) : ISBN(isbn), numberOfCopies(no){
+            strcpy(bookTitle, title);
+            strcpy(author, a);
+        }
+
+        void getData(){
+            cout << "Enter book ISBN: ";
+            cin >> ISBN;
+            cout << "Enter book title: ";
+            cin.ignore();
+            cin.getline(bookTitle, 50);
+            cout << "Enter author name: ";
+            cin.ignore();
+            cin.getline(author, 30);
+            cout << "Enter number of copies: ";
+            cin >> numberOfCopies;
+        }
+};
+
+int main(){
+
+}
